@@ -11,8 +11,9 @@ public class Main {
 
 //        System.out.println("Hola, Santiago Lugo");
 //        String cadenas = "santiago" + "lugo" + "sánchez";
+////        2
 //        System.out.println(cadenas);
-
+//
 //        System.out.println(cadenas.length()); //nos ayuda a ver la cantidad de caracteres de una cadena
 //
 //        System.out.println(cadenas.substring(2,5));
@@ -46,35 +47,35 @@ public class Main {
 //        System.out.println("Aleatorio double: "+numDouble);
 
 //        //ingreso de datos
-//        Scanner scn= new Scanner(System.in);
-//
-//        System.out.println("Introduce cualquier dato: ");
-//        String dato= scn.nextLine();
-//
-//        System.out.println("Introduce un dato entero: ");
-//        int datoentero= scn.nextInt();
-//
-//        System.out.println("Introduce un dato decimal: ");
-//        double datodecimal= scn.nextDouble();
-//
-//        System.out.println("Cualquier dato: "+dato);
-//
-//        System.out.println("Dato entero: "+datoentero);
-//
-//        System.out.println("Dato decimal: "+datodecimal);
+        Scanner scn= new Scanner(System.in);
+
+        System.out.println("Introduce cualquier dato: ");
+        String dato= scn.nextLine();
+
+        System.out.println("Introduce un dato entero: ");
+        int datoentero= scn.nextInt();
+
+        System.out.println("Introduce un dato decimal: ");
+        double datodecimal= scn.nextDouble();
+
+        System.out.println("Cualquier dato: "+dato);
+
+        System.out.println("Dato entero: "+datoentero);
+
+        System.out.println("Dato decimal: "+datodecimal);
 
         //5. Boolean, Operadores logicps y de comprobación
-        System.out.println(10 > 9);//true
-        System.out.println(10 == 9);//false
-        System.out.println(10 < 9);//false
-        System.out.println(10 >= 9);//true
-        System.out.println(10 <= 9);//false
-        System.out.println(10 != 9);//true
-
-        System.out.println();
-        int x= 3;
-        System.out.println(x<5 && x>10);
-        System.out.println(x<5 || x>10);
-        System.out.println(!(x<5 && x>10));
+//        System.out.println(10 > 9);//true
+//        System.out.println(10 == 9);//false
+//        System.out.println(10 < 9);//false
+//        System.out.println(10 >= 9);//true
+//        System.out.println(10 <= 9);//false
+//        System.out.println(10 != 9);//true
+//
+//        System.out.println();
+//        int x= 3;
+//        System.out.println(x<5 && x>10);
+//        System.out.println(x<5 || x>10);
+//        System.out.println(!(x<5 && x>10));
         }
     }
