@@ -48,5 +48,11 @@ public class Main {
 //
 //        JOptionPane.showMessageDialog(null,"El peso total es: "+res+"g");
 
+        //6
+//        String frase;
+//
+//        frase = JOptionPane.showInputDialog("Ingrese una frase");
+//        JOptionPane.showMessageDialog(null,reverseInputString(frase));
+
         }
     }
