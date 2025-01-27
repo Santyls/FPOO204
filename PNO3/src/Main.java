@@ -26,12 +26,18 @@ public class Main {
 //                +nombre.toUpperCase()+" "+apellidoPa.toUpperCase()+" "+apellidoMa.toUpperCase()+"\n "
 //                +capitalize(nombre.toLowerCase())+" "+capitalize(apellidoPa.toLowerCase())+" "+capitalize(apellidoMa.toLowerCase()));
           //3
-        int x,suma = 0;
-        x = Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese un número"));
-        for (int i=0;i<=x;i++){
-            suma = suma+i;
-        }
-        JOptionPane.showMessageDialog(null,"La suma de todos los enteros del 0 al "+x+" es: "+suma);
+//        int x,suma = 0;
+//        x = Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese un número"));
+//        for (int i=0;i<=x;i++){
+//            suma = suma+i;
+//        }
+//        JOptionPane.showMessageDialog(null,"La suma de todos los enteros del 0 al "+x+" es: "+suma);
+
+        //4
+        String nombre;
+
+        nombre = JOptionPane.showInputDialog(null,"Ingrese su nombre");
+        JOptionPane.showMessageDialog(null,"<"+nombre.toUpperCase()+"> tiene <"+nombre.length()+"> letras" );
 
         }
     }
