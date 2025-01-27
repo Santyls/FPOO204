@@ -36,8 +36,17 @@ public class Main {
         //4
         String nombre;
 
-        nombre = JOptionPane.showInputDialog(null,"Ingrese su nombre");
-        JOptionPane.showMessageDialog(null,"<"+nombre.toUpperCase()+"> tiene <"+nombre.length()+"> letras" );
+        //5 Payasos y muñecas
+//        int payasos = 112;
+//        int muñecas = 75;
+//        int n,res=0;
+//
+//        n= Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese el número de payasos vendidos"));
+//        res = payasos*n;
+//        n = Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese el número de muñecas vendidas"));
+//        res = res+(muñecas*n);
+//
+//        JOptionPane.showMessageDialog(null,"El peso total es: "+res+"g");
 
         }
     }
