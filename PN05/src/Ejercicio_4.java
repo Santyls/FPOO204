@@ -5,7 +5,7 @@ public class Ejercicio_4{
         int num;
         num = Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese la altura del triángulo (entero positivo)"));
 
-        if (num>=1 && num<=10){
+        if (num>0){
             System.out.println("Entero positivo: "+num);
 
             for (int i = 1;i<=num;i++){
