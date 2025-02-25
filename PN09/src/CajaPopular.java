@@ -1,10 +1,51 @@
 import javax.swing.*;
 
 public class CajaPopular {
-    public int noCuenta;
-    public String titular;
-    public int edad;
-    public double saldo;
+    private int noCuenta;
+    private String titular;
+    private int edad;
+    private double saldo;
+
+    //getters and setters
+    public CajaPopular(int noCuenta, String titular, int edad, double saldo) {
+        this.noCuenta = noCuenta;
+        this.titular = titular;
+        this.edad = edad;
+        this.saldo = saldo;
+    }
+
+    public int getNoCuenta() {
+        return noCuenta;
+    }
+
+    public void setNoCuenta(int noCuenta) {
+        this.noCuenta = noCuenta;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
 
     public void verCuenta(){
         JOptionPane.showMessageDialog(null,"No.Cuenta: "+noCuenta
