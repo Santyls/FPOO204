@@ -6,11 +6,11 @@ public class Main {
         int longitud;
         boolean mayusculas = false;
         boolean caracteresE = false;
+
         String opcion;
         Object[] ver = { "Si","No" };
         int op;
 
-        Password pass = new Password();
         opcion = JOptionPane.showInputDialog(null, "Ingresa la longitud de la contraseña:");
         if (opcion.equals("")){
             longitud = 8;
@@ -26,10 +26,9 @@ public class Main {
             caracteresE = true;
         }
 
-        password = pass.generarPassword(longitud,mayusculas,caracteresE);
-        JOptionPane.showMessageDialog(null,"Contraseña: "+password);
-        JOptionPane.showMessageDialog(null, "la contraseña es: "+pass.comprobarFortaleza(password));
-
+        Password pass = new Password(longitud,mayusculas,caracteresE);
+        JOptionPane.showMessageDialog(null,"Contraseña: "+pass.generarPassword());
+        JOptionPane.showMessageDialog(null, "la contraseña es: "+pass.comprobarFortaleza());
 
     }
 }//main
