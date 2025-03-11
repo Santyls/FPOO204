@@ -9,6 +9,10 @@ public class Main {
         arma r = new arma(1);
         boolean accion;
 
+        String palabra = "hola";
+        String cuenta = palabra.substring(0, 2);
+        int cuentas = palabra.length();
+
         nombre = JOptionPane.showInputDialog(null,"Ingrese el nombre del jugador 1");
         Jugador jugador1 = new Jugador(nombre,3);
 
