@@ -80,4 +80,19 @@ public class UserCRUD {
             return false;
         }
     }
+    
+    public boolean deleteUsuario(int id){
+        String sqlEliminar = "DELETE FROM usuarios WHERE id = ?";
+        
+        try {
+            PreparedStatement ps = conexion.prepareStatement(sqlEliminar);
+            ps.setInt(1, id);
+            return ps.executeUpdate()>0;
+        }catch(SQLException e){
+            System.out.println("Error al eliminar el usuario "+ e.getMessage());
+            return false;
+        }
+    }
+    
+    
 }//

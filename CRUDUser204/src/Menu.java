@@ -29,8 +29,8 @@ public class Menu extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        miActualizarUsuario = new javax.swing.JMenuItem();
+        miEliminarUsuario = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,11 +52,21 @@ public class Menu extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem2);
 
-        jMenuItem3.setText("Actualizar Usuario");
-        jMenu1.add(jMenuItem3);
+        miActualizarUsuario.setText("Actualizar Usuario");
+        miActualizarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miActualizarUsuarioActionPerformed(evt);
+            }
+        });
+        jMenu1.add(miActualizarUsuario);
 
-        jMenuItem4.setText("Eliminar Usuario");
-        jMenu1.add(jMenuItem4);
+        miEliminarUsuario.setText("Eliminar Usuario");
+        miEliminarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miEliminarUsuarioActionPerformed(evt);
+            }
+        });
+        jMenu1.add(miEliminarUsuario);
 
         jMenuBar1.add(jMenu1);
 
@@ -85,6 +95,16 @@ public class Menu extends javax.swing.JFrame {
         FormRegistro FR = new FormRegistro();
         FR.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void miActualizarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miActualizarUsuarioActionPerformed
+        FormEditar FA = new FormEditar();
+        FA.setVisible(true);
+    }//GEN-LAST:event_miActualizarUsuarioActionPerformed
+
+    private void miEliminarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miEliminarUsuarioActionPerformed
+        FormEliminar FE = new FormEliminar();
+        FE.setVisible(true);
+    }//GEN-LAST:event_miEliminarUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -126,7 +146,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem miActualizarUsuario;
+    private javax.swing.JMenuItem miEliminarUsuario;
     // End of variables declaration//GEN-END:variables
 }
